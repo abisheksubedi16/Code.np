@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image:url("image/bgg.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+nav img{
+    width: 150px;
+}
+
+.menu{
+    flex: 1;
+    text-align: right;
+    text-decoration: none;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+   padding: 8px 12px;
+   text-decoration: none;
+}
+.menu ul li{
+    color: white;
+    text-decoration:none;
+    font-size: 25px;
+}
+.menu ul li::after{
+    content:'';
+    width:0% ;
+    height: 2px;
+    background-color: red;
+    display: block;
+    margin:auto ;
+    transition: 0.2;;
+    text-decoration:none ;
+}
+.menu ul li:hover::after{
+    width:100% ;
+}
+.textbox{
+    width: 80%;
+    position: absolute;
+    top: 50%,50%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: white;
+}
+.textbox h1{
+    font-size: 60px;
+}
+.textbox p{
+    font-size: 25px;
+}
+.aboutus-button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border:2px solid black ;
+    padding: 9px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.aboutus-button:hover{
+    border:2px solid black;
+    transition: 0.55s;
+    background: rgb(204, 61, 61);
+}
+nav .fa{
+    display: none;
+}
+/* for small divice*/
+@media(max-width: 700px){
+    .textbox h1{
+        font-size: 40px;
+    }
+    .textbox p{
+        font-size: 15px;
+    }
+    .menu ul li{
+        display:block;
+    }
+.menu{
+   background:rgb(204, 61, 61);
+    right: -200px;
+    top: 0;
+    height: 100vh;
+    width: 200px;
+    text-align: left;
+    position: fixed;
+    z-index: 2;
+}
+.menu ul{
+    margin: 10px;
+}
+nav .fa{
+    display: block;
+    font-size: 30px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+}
+
+}
+/* for small divice*/
+/* feature section star*/
+.feat{
+    text-align: center;
+     margin: 3%;
+     font-size: 30px;
+}
+.featp{
+    text-align: center;
+     margin: 3%;
+     font-size: 25px;
+     color: black;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.col{
+    flex-basis: 31%;
+    text-align: center;
+    margin: 3%;
+    background-color: lightgray;
+    padding: 2%;
+    border-radius: 30px;
+     color: black;
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction:column ;
+    }
+    .featp{
+        text-align: center;
+         font-size: 20px;
+        
+    }
+    .feat{
+        text-align: center;
+         font-size: 40px;
+    }
+    .menu ul li{
+       text-decoration: none;
+    }
+}
+nav h1{
+    text-decoration:none;
+    font-size: 40px;
+    color: white;
+    cursor:pointer;
+}
+a{
+    text-decoration: none;
+}
+.col h3{
+    font-size: 25px;
+}
+.feath3{
+    text-align: center;
+         margin: 1%;
+         font-size: 25px;
+        
+}
+.feat h3{
+    font-size: 25px;
+}
+.contactus{
+    background-color: rgb(177, 175, 175);
+    width: 90%;
+    height: 25vh;
+    margin: auto;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contactus h1{
+    color: black;
+    padding: 1;
+    margin: 2%;
+    text-align: center;
+    font-size: 30px;
+}
+@media(max-width:700px)
+{
+    .contactus h1{
+        color: black;
+        padding: 2%;
+        margin: 2%;
+        text-align: center;
+        font-size: 25px;
+    }
+}
+.footer{
+    background-color: rgb(141, 141, 141);
+    padding: 2%;
+    text-align: center;
+}
+.lastline{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.pri{
+    flex:1;
+    display: inline-block;
+    text-align: right;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+.feat-button{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border:2px solid black ;
+    padding: 9px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.feat-button:hover{
+    border:2px solid black;
+    transition: 0.55s;
+    background: rgb(5, 5, 5);
+    color: white;
+}
