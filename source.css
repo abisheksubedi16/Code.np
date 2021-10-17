@@ -241,13 +241,6 @@ h1{
     font-size: 15px;
     color: rgb(94, 94, 94);
 }
-
-@media(max-width:700px)
-{
-    .contact h1{
-        font-size: 40px;
-    }
-}
 .priv h1{
     font-size: 60px;
 }
@@ -255,3 +248,28 @@ h1{
     font-size: 30px;
     text-align: center;
 }
+
+@media(max-width:700px)
+{
+    .contact h1{
+        font-size: 40px;
+    }
+    .priv h1{
+        font-size: 30px;
+    }
+    .priv p{
+        font-size: 27px;
+        text-align: center;
+    }
+    .aboutus{
+        text-align: center;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+    }
+    .aboutus h1{
+       font-size: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
